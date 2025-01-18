@@ -1,10 +1,6 @@
 from data import question_data
 from quiz_brain import QuizBrain
-
-class Question:
-   def __init__(self,text,answer):
-       self.text=text
-       self.answer=answer
+from question_model import Question
 question_bank=[]
 for i in range(0,len(question_data)):
     question=Question(question_data[i]['question'],question_data[i]['correct_answer'])
